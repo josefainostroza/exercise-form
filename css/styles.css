@@ -21,6 +21,84 @@ ul {
 }
 body {
   margin: 0;
-  font-family: sans-serif;
-  color: aliceblue;
+  font-family: 'Space Grotesk', sans-serif;
+  color: #21092f;
+  background-image: url('/assets/images/bg-main-mobile.png');
+  background-repeat: no-repeat;
+  background-size: 100% 240px;
+}
+
+.container {
+  padding: 32px 24px 45px 24px;
+}
+
+.cardback {
+  position: relative;
+}
+.cardfront {
+  position: absolute;
+}
+
+.bgmobile {
+  width: 375px;
+  height: 240px;
+}
+.cardback {
+  width: 286px;
+  height: 157px;
+}
+.cardfront {
+  width: 286px;
+  height: 157px;
+}
+.nametext {
+  font-weight: 500; /*grosor, peso de la fuente*/
+  font-size: 12px; /*tamaño de la fuente*/
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 9px;
+}
+
+.resultdateform {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.dateinput {
+  width: 72px;
+  border: 1px solid #dfdee0;
+  padding: 11px;
+  border-radius: 8px;
+}
+.cvcinput {
+  width: 100%;
+  border: 1px solid #dfdee0;
+  padding: 11px;
+  border-radius: 8px;
+}
+.date-cvc-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+.input {
+  border: 1px solid #dfdee0;
+  padding: 11px;
+  border-radius: 8px;
+}
+.button {
+  background-color: #21092f;
+  padding: 15px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 18px; /*tamaño de la fuente*/
 }

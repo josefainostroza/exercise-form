@@ -3,19 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header></header>
-    <main>
-      <!-- <img
-          class="image1"
-          src="./assets/images/"
-          alt=""
-        /> -->
+    <main class="container">
+      <div class="cards">
+        <img class="cardback" src="./assets/images/bg-card-back.png" alt="" />
+        <img class="cardfront" src="./assets/images/bg-card-front.png" alt="" />
+      </div>
+      <div class="form">
+        <div class="input-form ">
+          <label class="text" for="name">CARDHOLDER NAME </label>
+          <input class="input" type="text" id="name" placeholder="e.g. Jane Appleseed" required />
+        </div>
+        <div class="input-form ">
+          <label class="text" for="name">CARD NUMBER </label>
+          <input class="input" type="text" id="name" required />
+        </div>
+        <div class="date-cvc-form">
+          <div class="input-form ">
+            <label class="text" for="name">EXP. DATE (MM/YY)</label>
+            <div class="resultdateform">
+              <input class="dateinput" type="text" id="name" required />
+              <input class="dateinput" type="text" id="name" required />
+            </div>
+          </div>
+          <div class="input-form ">
+            <label class="text" for="name">CVC</label>
+            <input class="cvcinput" type="text" id="name" required />
+          </div>
+        </div>
+  
+        <input class="button" type="submit" value="Confirm" />
+  
+      </form>
+      </div>
     </main>
-    <footer></footer>
     <script src="js/scripts.js"></script>
   </body>
 </html>
