@@ -27,16 +27,65 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 240px;
 }
+@media screen and (width>768px) {
+  body {
+    background-image: url('/assets/images/bg-main-desktop.png');
+    background-size: 483px 100%;
+  }
+}
 
 .container {
   padding: 32px 24px 45px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+@media screen and (width>768px) {
+  .container {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.cards {
+  margin: 0 auto;
+  width: 343px;
+  height: 251px;
+  position: relative;
+}
+@media screen and (width>768px) {
+  .cards {
+    margin: 0px;
+    width: 541px;
+    height: 527px;
+    min-width: 447px;
+  }
 }
 
 .cardback {
-  position: relative;
+  position: absolute;
+  left: 57px;
+}
+@media screen and (width>768px) {
+  .cardback {
+    left: auto;
+    right: 0px;
+    bottom: 0px;
+  }
 }
 .cardfront {
   position: absolute;
+  top: 94.04px;
+}
+@media screen and (width>768px) {
+  .cardfront {
+    left: 0;
+    right: auto;
+    top: 0px;
+  }
 }
 
 .bgmobile {
@@ -47,9 +96,90 @@ body {
   width: 286px;
   height: 157px;
 }
+@media screen and (width>768px) {
+  .cardback {
+    width: 447px;
+    height: 245px;
+  }
+}
 .cardfront {
   width: 286px;
   height: 157px;
+}
+@media screen and (width>768px) {
+  .cardfront {
+    width: 447px;
+    height: 245px;
+  }
+}
+.logocardfront {
+  position: absolute;
+  top: 112px;
+  left: 19px;
+  width: 54px;
+  height: 30px;
+}
+@media screen and (width>768px) {
+  .logocardfront {
+    top: 28px;
+    width: 84px;
+    height: 47px;
+  }
+}
+.card {
+  position: absolute;
+  font-weight: 500; /*grosor, peso de la fuente*/
+  color: #ffffff;
+}
+.number {
+  font-size: 18px; /*tamaño de la fuente*/
+  top: 179px;
+  left: 19px;
+}
+@media screen and (width>768px) {
+  .number {
+    font-size: 28px; /*tamaño de la fuente*/
+    top: 130px;
+    left: 32px;
+  }
+}
+.text {
+  font-size: 9px; /*tamaño de la fuente*/
+  top: 219px;
+  left: 19px;
+}
+@media screen and (width>768px) {
+  .text {
+    font-size: 14px; /*tamaño de la fuente*/
+    top: 200px;
+    left: 32px;
+  }
+}
+.date {
+  font-size: 9px; /*tamaño de la fuente*/
+  top: 219px;
+  left: 232.11px;
+}
+@media screen and (width>768px) {
+  .date {
+    font-size: 14px; /*tamaño de la fuente*/
+    top: 200px;
+    left: 365px;
+  }
+}
+.dateback {
+  font-size: 9px; /*tamaño de la fuente*/
+  top: 63px;
+  left: 286px;
+}
+@media screen and (width>768px) {
+  .dateback {
+    font-size: 14px; /*tamaño de la fuente*/
+    top: auto;
+    left: auto;
+    bottom: 100px;
+    right: 57px;
+  }
 }
 .nametext {
   font-weight: 500; /*grosor, peso de la fuente*/
