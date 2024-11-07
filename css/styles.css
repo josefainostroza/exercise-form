@@ -1,3 +1,6 @@
+:root {
+  --input-error: #dfdee0;
+}
 * {
   box-sizing: border-box;
 }
@@ -205,15 +208,9 @@ body {
 }
 .dateinput {
   width: 72px;
-  border: 1px solid #dfdee0;
-  padding: 11px;
-  border-radius: 8px;
 }
 .cvcinput {
   width: 100%;
-  border: 1px solid #dfdee0;
-  padding: 11px;
-  border-radius: 8px;
 }
 .date-cvc-form {
   display: flex;
@@ -221,9 +218,12 @@ body {
   gap: 8px;
 }
 .input {
-  border: 1px solid #dfdee0;
+  border: 1px solid var(--input-error);
   padding: 11px;
   border-radius: 8px;
+}
+.inputError {
+  border: 1px solid red;
 }
 .button {
   background-color: #21092f;

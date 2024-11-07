@@ -13,41 +13,41 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <main class="container">
+    <main id="container"class="container">
       <div class="cards">
         <img class="cardback" src="./assets/images/bg-card-back.png" alt="" />
         <img class="cardfront" src="./assets/images/bg-card-front.png" alt="" />
         <img class="logocardfront" src="./assets/images/card-logo.svg" alt="" />
-        <p class="card number">0000 0000 0000 0000</p>
-        <p class="card text">JANE APPLESEED</p>
-        <p class="card date">00/00</p>
-        <p class="card dateback">000</p>
+        <p id="cardNumberFront" class="card number">0000 0000 0000 0000</p>
+        <p id="name" class="card text">JANE APPLESEED</p>
+        <p class="card date"><span id="months">00</span>/<span id="year">00</span></p>
+        <p id="backCvc"class="card dateback">000</p>
 
       </div>
-      <div class="form">
+      <form class="form">
         <div class="input-form ">
           <label class="text" for="name">CARDHOLDER NAME </label>
-          <input class="input" type="text" id="name" placeholder="e.g. Jane Appleseed" required />
+          <input class="input" type="text" id="nameform" placeholder="e.g. Jane Appleseed" required />
         </div>
         <div class="input-form ">
           <label class="text" for="name">CARD NUMBER </label>
-          <input class="input" type="text" id="name" placeholder="e.g. 1234 5678 9123 0000" required />
+          <input id="textCardNumber" class="input" type="text"  maxlength="16" placeholder="e.g. 1234 5678 9123 0000" required />
         </div>
         <div class="date-cvc-form">
           <div class="input-form ">
             <label class="text" for="name">EXP. DATE (MM/YY)</label>
             <div class="resultdateform">
-              <input class="dateinput" type="text" id="name" placeholder="MM" required />
-              <input class="dateinput" type="text" id="name" placeholder="YY"  required />
+              <input id="monthsform" class="input dateinput" type="text"  maxlength="2"  placeholder="MM" required />
+              <input id="yearform" class="input dateinput" type="text"  maxlength="2"  placeholder="YY"  required />
             </div>
           </div>
           <div class="input-form ">
             <label class="text" for="name">CVC</label>
-            <input class="cvcinput" type="text" id="name" placeholder="e.g. 123" required />
+            <input id="textCvc"class="input cvcinput" type="text"  maxlength="3" placeholder="e.g. 123" required />
           </div>
         </div>
   
-        <input class="button" type="submit" value="Confirm" />
+        <input id="button" class="button" type="submit" value="Confirm" />
   
       </form>
       </div>
